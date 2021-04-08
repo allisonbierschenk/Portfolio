@@ -1,0 +1,87 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: white;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20vh;
+  margin-top: 10%;
+  padding: 2%;
+  height: 60vh;
+  width: 50vw;
+  justify-content: space-evenly;
+  background-color: #212d40;
+}
+
+.email-info {
+  font-size: 26px;
+  color: white;
+}
+
+.float-label-1 label,
+.float-label-2 label {
+  font-family: "Arima Madurai", cursive;
+  font-size: 14px;
+  padding: 0 12px;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(0, 14px) scale(1);
+}
+
+.float-label-1 input,
+.float-label-2 input {
+  font-family: "Arima Madurai", cursive;
+  background-color: #364156;
+  outline: 0;
+  font-size: 14px;
+  width: 20vw;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+
+.float-label-3 textarea {
+  font-family: "Arima Madurai", cursive;
+  background-color: #364156;
+  outline: 0;
+  font-size: 14px;
+  width: 20vw;
+  padding: 10px;
+  height: 10vh;
+  color: white;
+  border: none;
+}
+
+.float-label-3 label {
+  font-family: "Arima Madurai", cursive;
+  font-size: 14px;
+  padding: 0 12px;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(0, 14px) scale(1);
+}
+
+.float-label-1 .Active,
+.float-label-2 .Active,
+.float-label-3 .Active {
+  transform: translate(10%, -2.1vh);
+  color: #7d4e57;
+}
+
+.submit-button {
+  font-family: "Bebas Neue", cursive;
+  background-color: white;
+  border: none;
+  outline: none;
+  height: 5vh;
+  width: 10vw;
+  font-size: 18px;
+}
+.submit-button:hover {
+  background-color: #364156;
+}

@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100vw;
+  height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #212d40;
+  font-family: "Bebas Neue", cursive;
+  color: #7d4e57;
+}
+.left-nav {
+  padding-left: 40px;
+  color: #7d4e57;
+}
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 73vw;
+  padding-right: 40px;
+  color: #7d4e57;
+}
+
+.image-logo {
+  margin-top: 3vh;
+}

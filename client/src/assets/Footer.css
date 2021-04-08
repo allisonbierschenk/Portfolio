@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* .logo-footer {
+  padding-left: 40px;
+} */
+
+.attribution {
+  font-size: 12px;
+  color: #7d4e57;
+  padding-left: 40px;
+}
