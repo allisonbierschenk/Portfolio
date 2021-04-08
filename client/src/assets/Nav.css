@@ -3,25 +3,44 @@
   justify-content: space-between;
   min-width: 100vw;
   height: 10vh;
-  position: -webkit-sticky;
+  /* position: -webkit-sticky; */
   position: sticky;
   top: 0;
   background: #212d40;
   font-family: "Bebas Neue", cursive;
-  color: #7d4e57;
 }
 .left-nav {
   padding-left: 40px;
+}
+a {
+  text-decoration: none;
   color: #7d4e57;
+}
+a:hover {
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
 }
 .right-nav {
   display: flex;
   justify-content: space-between;
   width: 73vw;
   padding-right: 40px;
-  color: #7d4e57;
 }
 
 .image-logo {
   margin-top: 3vh;
+}
+
+.resume {
+  font-family: "Bebas Neue", cursive;
+  background-color: #212d40;
+  border: none;
+  outline: none;
+  border: 2px rgba(255, 255, 255, 0.653) solid;
+  padding: 5px 10px 5px 10px;
+  font-size: 24px;
+  border-radius: 5px;
 }

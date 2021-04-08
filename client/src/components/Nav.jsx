@@ -20,13 +20,12 @@ export default function Nav() {
         <Link to="/#projects-pm">
           <h1>Project Manager Projects</h1>
         </Link>
-        <a href="https://drive.google.com/file/d/1EQIiW-R-AqbgLK3esL_H3H-189mSESso/view?usp=sharing">
-          <button>See my Site</button>
-        </a>
-
         <Link to="/#contact">
           <h1>Get In Touch</h1>
         </Link>
+        <a href="https://drive.google.com/file/d/1EQIiW-R-AqbgLK3esL_H3H-189mSESso/view?usp=sharing">
+          <h1 className="resume">resume</h1>
+        </a>
       </div>
     </div>
   );

@@ -21,13 +21,13 @@ export default function PortfolioPiecesContainer() {
             </div>
             <div className="buttons">
               <a href="travel-like-a-local.netlify.app" target="_blank">
-                <button>See my Site</button>
+                <button className="button">See my Site</button>
               </a>
               <a
                 href="https://github.com/allisonbierschenk/Travel-Like-A-Local"
                 target="_blank"
               >
-                <button>See my Code</button>
+                <button className="button">See my Code</button>
               </a>
             </div>
           </div>
@@ -44,13 +44,13 @@ export default function PortfolioPiecesContainer() {
             </div>
             <div className="buttons">
               <a href="https://sundaydriver.netlify.app/" target="_blank">
-                <button>See my Site</button>
+                <button className="button">See my Site</button>
               </a>
               <a
                 href="https://github.com/allisonbierschenk/car-app"
                 target="_blank"
               >
-                <button>See my Code</button>
+                <button className="button">See my Code</button>
               </a>
             </div>
           </div>
@@ -67,13 +67,13 @@ export default function PortfolioPiecesContainer() {
             </div>
             <div className="buttons">
               <a href="https://whiteboard-workout.netlify.app/" target="_blank">
-                <button>See my Site</button>
+                <button className="button">See my Site</button>
               </a>
               <a
                 href="https://github.com/allisonbierschenk/Work_it_out"
                 target="_blank"
               >
-                <button>See my Code</button>
+                <button className="button">See my Code</button>
               </a>
             </div>
           </div>
@@ -92,13 +92,13 @@ export default function PortfolioPiecesContainer() {
                 href="https://allisonbierschenk.github.io/good-news/"
                 target="_blank"
               >
-                <button>See my Site</button>
+                <button className="button">See my Site</button>
               </a>
               <a
                 href="https://github.com/allisonbierschenk/good-news"
                 target="_blank"
               >
-                <button>See my Code</button>
+                <button className="button">See my Code</button>
               </a>
             </div>
           </div>

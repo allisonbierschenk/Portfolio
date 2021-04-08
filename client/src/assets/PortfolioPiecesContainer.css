@@ -50,7 +50,7 @@
   font-weight: bolder;
 }
 
-button {
+.button {
   font-family: "Bebas Neue", cursive;
   background-color: white;
   border: none;
@@ -59,7 +59,7 @@ button {
   width: 90px;
 }
 
-button:hover {
+.button:hover {
   background-color: #212d40;
   color: #d66853;
 }
