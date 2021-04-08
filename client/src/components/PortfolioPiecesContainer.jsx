@@ -20,15 +20,15 @@ export default function PortfolioPiecesContainer() {
               </div>
             </div>
             <div className="buttons">
-              <Link to="travel-like-a-local.netlify.app" target="_blank">
+              <a href="travel-like-a-local.netlify.app" target="_blank">
                 <button>See my Site</button>
-              </Link>
-              <Link
-                to="https://github.com/allisonbierschenk/Travel-Like-A-Local"
+              </a>
+              <a
+                href="https://github.com/allisonbierschenk/Travel-Like-A-Local"
                 target="_blank"
               >
-                <button>See my code</button>
-              </Link>
+                <button>See my Code</button>
+              </a>
             </div>
           </div>
         </div>
@@ -43,15 +43,15 @@ export default function PortfolioPiecesContainer() {
               </div>
             </div>
             <div className="buttons">
-              <Link to="https://sundaydriver.netlify.app/" target="_blank">
+              <a href="https://sundaydriver.netlify.app/" target="_blank">
                 <button>See my Site</button>
-              </Link>
-              <Link
-                to="https://github.com/allisonbierschenk/car-app"
+              </a>
+              <a
+                href="https://github.com/allisonbierschenk/car-app"
                 target="_blank"
               >
-                <button>See my code</button>
-              </Link>
+                <button>See my Code</button>
+              </a>
             </div>
           </div>
         </div>
@@ -66,18 +66,15 @@ export default function PortfolioPiecesContainer() {
               </div>
             </div>
             <div className="buttons">
-              <Link
-                to="https://whiteboard-workout.netlify.app/"
-                target="_blank"
-              >
+              <a href="https://whiteboard-workout.netlify.app/" target="_blank">
                 <button>See my Site</button>
-              </Link>
-              <Link
-                to="https://github.com/allisonbierschenk/Work_it_out"
+              </a>
+              <a
+                href="https://github.com/allisonbierschenk/Work_it_out"
                 target="_blank"
               >
-                <button>See my code</button>
-              </Link>
+                <button>See my Code</button>
+              </a>
             </div>
           </div>
         </div>
@@ -91,18 +88,18 @@ export default function PortfolioPiecesContainer() {
               </div>
             </div>
             <div className="buttons">
-              <Link
-                to="https://allisonbierschenk.github.io/good-news/"
+              <a
+                href="https://allisonbierschenk.github.io/good-news/"
                 target="_blank"
               >
                 <button>See my Site</button>
-              </Link>
-              <Link
-                to="https://github.com/allisonbierschenk/good-news"
+              </a>
+              <a
+                href="https://github.com/allisonbierschenk/good-news"
                 target="_blank"
               >
-                <button>See my code</button>
-              </Link>
+                <button>See my Code</button>
+              </a>
             </div>
           </div>
         </div>
