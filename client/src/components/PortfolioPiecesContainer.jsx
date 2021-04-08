@@ -20,7 +20,7 @@ export default function PortfolioPiecesContainer() {
               </div>
             </div>
             <div className="buttons">
-              <a href="travel-like-a-local.netlify.app" target="_blank">
+              <a href="https://travel-like-a-local.netlify.app" target="_blank">
                 <button className="button">See my Site</button>
               </a>
               <a
