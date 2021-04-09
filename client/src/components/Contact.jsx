@@ -41,7 +41,7 @@ export default function Contact() {
         }}
       >
         <div className="direct">
-          <p className="email-info"> Email me >> allisonreynoldsc@gmail.com</p>
+          <p className="email-info"> Email me | allisonreynoldsc@gmail.com</p>
           <div>FORM IS UNDER CONSTRUCTION</div>
         </div>
         <div className="float-label-1">
