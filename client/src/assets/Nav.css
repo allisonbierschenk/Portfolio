@@ -90,7 +90,7 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
     background-color: #212d40;
-    position: absolute;
+    position: fixed;
     justify-content: start;
     top: 0;
     right: 0;
@@ -104,6 +104,9 @@ h1 {
   #open {
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+  }
+  #notopen {
+    transform: translateX(0);
   }
   .image-logo {
     margin-top: 1vh;

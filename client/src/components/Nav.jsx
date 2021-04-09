@@ -16,7 +16,7 @@ function Nav(props) {
         </Link>
         <HamburgerMenu setBurger={setBurgerOpen} />
       </div>
-      <div className="right-nav" id={burgerOpen ? null : "open"}>
+      <div className="right-nav" id={burgerOpen ? "notopen" : "open"}>
         <Link to="/#about">
           <h1 onClick={open}>About Me</h1>
         </Link>

@@ -9,6 +9,9 @@ const StyledBurger = styled.div`
   position: fixed;
   top: 15px;
   right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
   z-index: 11;
   display: none;
   transform-origin: 1px;
@@ -50,7 +53,7 @@ const HamburgerMenu = (props) => {
   const node = useRef();
   MouseClick(node, () => setOpen(false));
 
-  <Nav open={open} setOpen={setOpen} />;
+  <Nav open={open} setOpen={setOpen} onClick={burgerClick} />;
   return (
     <>
       <StyledBurger open={open} onClick={burgerClick}>
