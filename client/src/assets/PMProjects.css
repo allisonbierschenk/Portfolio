@@ -24,3 +24,29 @@
   text-align: center;
   font-size: 28px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .intro-pm {
+    padding: 15%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .intro-pm {
+    padding: 20%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .intro-pm {
+    padding: 30% 20%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .intro-pm {
+    padding: 40% 20%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .intro-pm {
+    padding: 45% 20%;
+  }
+}
