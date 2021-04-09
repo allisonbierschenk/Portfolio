@@ -4,7 +4,11 @@
   justify-content: space-evenly;
   height: 80vh;
   align-items: center;
+}
+
+.hello {
   font-size: 60px;
+  text-align: center;
 }
 
 .construction {
@@ -69,3 +73,89 @@
   object-fit: fill;
   width: 100%;
 } */
+@media only screen and (max-width: 1075px) {
+  .construction {
+    font-size: 75px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 65px;
+  }
+  .hello {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 45px;
+  }
+  .hello {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 40px;
+  }
+  .hello {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 35px;
+  }
+  .hello {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .construction {
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .hello {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .construction {
+    padding-top: 25px;
+    font-size: 30px;
+  }
+  .hello {
+    font-size: 35px;
+  }
+}
