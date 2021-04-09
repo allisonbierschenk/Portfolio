@@ -9,7 +9,7 @@ export default function PortfolioPiecesContainer() {
       <br />
       <div className="projects-container">
         <div className="each-project-container">
-          <img className="image" src="https://i.imgur.com/ckjeAzU.jpg" />
+          <img className="image" src="https://i.imgur.com/oBIeaCe.jpg?1" />
           <div className="details">
             <div>
               <div className="title">Travel Like A Local</div>
@@ -33,7 +33,7 @@ export default function PortfolioPiecesContainer() {
           </div>
         </div>
         <div className="each-project-container">
-          <img className="image" src="https://i.imgur.com/ckjeAzU.jpg" />
+          <img className="image" src="https://i.imgur.com/7GZ7Xb4.jpg?1" />
           <div className="details">
             <div>
               <div className="title">Sunday Driver</div>
@@ -56,7 +56,7 @@ export default function PortfolioPiecesContainer() {
           </div>
         </div>
         <div className="each-project-container">
-          <img className="image" src="https://i.imgur.com/ckjeAzU.jpg" />
+          <img className="image" src="https://i.imgur.com/ctYDaTC.jpg" />
           <div className="details">
             <div>
               <div className="title">WorkOut Tracker App</div>
@@ -79,7 +79,7 @@ export default function PortfolioPiecesContainer() {
           </div>
         </div>
         <div className="each-project-container">
-          <img className="image" src="https://i.imgur.com/ckjeAzU.jpg" />
+          <img className="image" src="https://i.imgur.com/Zukotas.jpg" />
           <div className="details">
             <div>
               <div className="title">GoodNews</div>

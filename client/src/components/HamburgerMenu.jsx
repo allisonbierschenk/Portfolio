@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { MouseClick } from "./MouseClick";
+import Nav from "./Nav";
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -9,6 +11,7 @@ const StyledBurger = styled.div`
   right: 20px;
   z-index: 10;
   display: none;
+  transform-origin: 1px;
 
   @media (max-width: 950px) {
     display: flex;
@@ -43,6 +46,11 @@ const HamburgerMenu = (props) => {
     setOpen(!open);
     props.setBurger((curr) => !curr);
   };
+
+  const node = useRef();
+  MouseClick(node, () => setOpen(false));
+
+  <Nav open={open} setOpen={setOpen} />;
   return (
     <>
       <StyledBurger open={open} onClick={burgerClick}>

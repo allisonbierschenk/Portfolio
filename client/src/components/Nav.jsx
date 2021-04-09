@@ -1,11 +1,12 @@
 import React from "react";
-import "../assets/Nav.css";
 import { HashLink as Link } from "react-router-hash-link";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import "../assets/Nav.css";
 
-function Nav() {
+function Nav(props) {
   const [burgerOpen, setBurgerOpen] = useState(false);
+  const { open } = props;
 
   return (
     <div className="navbar">
@@ -17,7 +18,7 @@ function Nav() {
       </div>
       <div className="right-nav" id={burgerOpen ? null : "open"}>
         <Link to="/#about">
-          <h1>About Me</h1>
+          <h1 onClick={open}>About Me</h1>
         </Link>
         <Link to="/#projects-dev">
           <h1>Developer Projects </h1>
