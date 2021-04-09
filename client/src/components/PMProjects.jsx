@@ -22,53 +22,78 @@ export default function PMProjects() {
           </div>
         </div>
         <div className="each-project-container">
-          <img className="image" src="https://i.imgur.com/7GZ7Xb4.jpg?1" />
+          <img className="image" src="https://i.imgur.com/ihelCD7.jpg" />
           <div className="details-pm">
             <div>
-              <div className="title-pm">Sunday Driver</div>
-              <div className="description">
-                A team collaboration full stack app built with React, Express
-                and MongoDB. The app features user authentication and full CRUD.
-              </div>
+              <div className="title-pm">Akoya</div>
             </div>
             <div className="buttons">
-              <a href="https://sundaydriver.netlify.app/" target="_blank">
+              <a href="https://www.akoyabio.com/" target="_blank">
                 <button className="button">See the Site</button>
               </a>
             </div>
           </div>
         </div>
         <div className="each-project-container">
-          <img className="image" src="https://i.imgur.com/ctYDaTC.jpg" />
+          <img className="image" src="https://i.imgur.com/apmSFU5.jpg" />
           <div className="details-pm">
             <div>
-              <div className="title-pm">WorkOut Tracker App</div>
-              <div className="description">
-                A front-end app built with full CRUD utilizing a custom Airtable
-                API.
-              </div>
+              <div className="title-pm">Cardiff Oncology</div>
             </div>
             <div className="buttons">
-              <a href="https://whiteboard-workout.netlify.app/" target="_blank">
+              <a href="https://www.cardiffoncology.com" target="_blank">
                 <button className="button">See the Site</button>
               </a>
             </div>
           </div>
         </div>
         <div className="each-project-container">
-          <img className="image" src="https://i.imgur.com/Zukotas.jpg" />
+          <img className="image" src="https://i.imgur.com/aqPAOyB.jpg" />
           <div className="details-pm">
             <div>
-              <div className="title-pm">GoodNews</div>
-              <div className="description">
-                A simple app with a RESTful API integration.
-              </div>
+              <div className="title-pm">Ultivue</div>
             </div>
             <div className="buttons">
-              <a
-                href="https://allisonbierschenk.github.io/good-news/"
-                target="_blank"
-              >
+              <a href="https://www.ultivue.com" target="_blank">
+                <button className="button">See the Site</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="each-project-container">
+          <img className="image" src="https://i.imgur.com/qRCMyZD.jpg" />
+          <div className="details-pm">
+            <div>
+              <div className="title-pm">ADACAP</div>
+            </div>
+            <div className="buttons">
+              <a href="https://www.adacap.com/" target="_blank">
+                <button className="button">See the Site</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="each-project-container">
+          <img className="image" src="https://i.imgur.com/RK1rWf5.jpg" />
+          <div className="details-pm">
+            <div>
+              <div className="title-pm">Advanced Instruments</div>
+            </div>
+            <div className="buttons">
+              <a href="https://www.aicompanies.com/" target="_blank">
+                <button className="button">See the Site</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="each-project-container">
+          <img className="image" src="https://i.imgur.com/KHVkjuS.jpg" />
+          <div className="details-pm">
+            <div>
+              <div className="title-pm">StemExpress</div>
+            </div>
+            <div className="buttons">
+              <a href="https://www.stemexpress.com/" target="_blank">
                 <button className="button">See the Site</button>
               </a>
             </div>
