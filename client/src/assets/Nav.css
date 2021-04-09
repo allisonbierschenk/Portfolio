@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 100vw;
   height: 10vh;
   position: sticky;
@@ -30,7 +31,7 @@ h1 {
 }
 
 .image-logo {
-  margin-top: 3vh;
+  margin-top: 10vh;
 }
 
 .resume {
@@ -42,4 +43,57 @@ h1 {
   padding: 5px 10px 5px 10px;
   font-size: 24px;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .right-nav {
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .resume {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .right-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 73vw;
+    padding-right: 40px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .resume {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .right-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #212d40;
+    position: absolute;
+    justify-content: start;
+
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #open {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
 }

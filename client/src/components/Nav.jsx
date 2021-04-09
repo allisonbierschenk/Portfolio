@@ -1,16 +1,21 @@
 import React from "react";
 import "../assets/Nav.css";
 import { HashLink as Link } from "react-router-hash-link";
+import { useState } from "react";
+import HamburgerMenu from "./HamburgerMenu";
 
-export default function Nav() {
+function Nav() {
+  const [burgerOpen, setBurgerOpen] = useState(false);
+
   return (
     <div className="navbar">
       <div className="left-nav">
         <Link to="/#hero">
           <img className="image-logo" src="https://i.imgur.com/kUvekMS.png?1" />
         </Link>
+        <HamburgerMenu setBurger={setBurgerOpen} />
       </div>
-      <div className="right-nav">
+      <div className="right-nav" id={burgerOpen ? null : "open"}>
         <Link to="/#about">
           <h1>About Me</h1>
         </Link>
@@ -33,3 +38,5 @@ export default function Nav() {
     </div>
   );
 }
+
+export default Nav;
