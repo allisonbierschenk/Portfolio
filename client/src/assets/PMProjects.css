@@ -1,0 +1,26 @@
+.intro-pm {
+  padding: 10%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212d40;
+}
+
+.details-pm {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 4%;
+}
+
+.title-pm {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 30px;
+}

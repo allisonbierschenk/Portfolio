@@ -7,6 +7,7 @@ import PortfolioPiecesContainer from "./PortfolioPiecesContainer";
 import About from "./About";
 import { HashLink as Link } from "react-router-hash-link";
 import Contact from "./Contact";
+import PMProjects from "./PMProjects";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <PortfolioPiecesContainer />
+      <PMProjects />
       <Contact />
       <Footer />
     </div>
