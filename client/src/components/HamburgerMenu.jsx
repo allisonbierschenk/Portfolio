@@ -6,12 +6,9 @@ import Nav from "./Nav";
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
+  position: absolute;
   top: 15px;
   right: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: column nowrap;
   z-index: 11;
   display: none;
   transform-origin: 1px;

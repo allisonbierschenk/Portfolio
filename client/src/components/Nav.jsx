@@ -6,7 +6,6 @@ import "../assets/Nav.css";
 
 function Nav(props) {
   const [burgerOpen, setBurgerOpen] = useState(false);
-  const { open } = props;
 
   return (
     <div className="navbar">
@@ -18,7 +17,7 @@ function Nav(props) {
       </div>
       <div className="right-nav" id={burgerOpen ? "notopen" : "open"}>
         <Link to="/#about">
-          <h1 onClick={open}>About Me</h1>
+          <h1 onClick={!burgerOpen}>About Me</h1>
         </Link>
         <Link to="/#projects-dev">
           <h1>Developer Projects </h1>
