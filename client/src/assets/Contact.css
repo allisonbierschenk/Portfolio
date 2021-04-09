@@ -1,5 +1,6 @@
 .contact {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 100vw;
@@ -16,6 +17,7 @@
   width: 50vw;
   justify-content: space-evenly;
   background-color: #11151c;
+  z-index: 5;
 }
 
 .email-info {
@@ -31,6 +33,7 @@
   pointer-events: none;
   position: absolute;
   transform: translate(0, 14px) scale(1);
+  z-index: 5;
 }
 
 .float-label-1 input,
@@ -43,6 +46,7 @@
   padding: 10px;
   color: white;
   border: none;
+  z-index: 5;
 }
 
 .float-label-3 textarea {
@@ -55,8 +59,12 @@
   height: 10vh;
   color: white;
   border: none;
+  z-index: 5;
 }
 
+label {
+  z-index: 5;
+}
 .float-label-3 label {
   font-family: "Arima Madurai", cursive;
   font-size: 14px;
