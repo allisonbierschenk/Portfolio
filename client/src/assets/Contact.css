@@ -74,9 +74,30 @@
   border: none;
   outline: none;
   height: 5vh;
-  width: 10vw;
+  width: 30vw;
   font-size: 18px;
 }
 .submit-button:hover {
   background-color: #364156;
+}
+
+@media only screen and (max-width: 800px) {
+  .float-label-3 textarea,
+  .float-label-1 input,
+  .float-label-2 input,
+  .submit-button {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .float-label-3 textarea,
+  .float-label-1 input,
+  .float-label-2 input,
+  .submit-button {
+    width: 75vw;
+  }
+  .form-container {
+    /* width: 100vw; */
+  }
 }
