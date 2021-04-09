@@ -42,7 +42,7 @@ export default function Contact() {
       >
         <div className="direct">
           <p className="email-info"> Email me >> allisonreynoldsc@gmail.com</p>
-          <div>or fill out the form below...</div>
+          <div>FORM IS UNDER CONSTRUCTION</div>
         </div>
         <div className="float-label-1">
           <label className={isActive ? "Active" : ""} htmlFor="name">
@@ -80,7 +80,7 @@ export default function Contact() {
             onChange={handleChange}
           />
         </div>
-        <button className="submit-button">Submit</button>
+        <button className="submit-button">CURRENTLY NOT WORKING</button>
       </form>
     </div>
   );
