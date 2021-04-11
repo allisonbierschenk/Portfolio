@@ -17,7 +17,7 @@ function Nav(props) {
       </div>
       <div className="right-nav" id={burgerOpen ? "notopen" : "open"}>
         <Link to="/#about">
-          <h1 onClick={!burgerOpen}>About Me</h1>
+          <h1>About Me</h1>
         </Link>
         <Link to="/#projects-dev">
           <h1>Developer Projects </h1>
