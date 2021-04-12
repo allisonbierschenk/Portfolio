@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #11151c;
 }
 .projects-container {
   display: flex;
@@ -66,7 +67,7 @@
 
 .button:hover {
   background-color: #364156;
-  color: #d66853;
+  color: #f72585;
 }
 
 @media only screen and (max-width: 1200px) {
