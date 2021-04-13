@@ -125,7 +125,7 @@
 
 @media only screen and (max-width: 375px) {
   .form-container {
-    height: 55vh;
+    height: 60vh;
   }
   .email-info {
     font-size: 18px;
