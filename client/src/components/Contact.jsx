@@ -76,6 +76,7 @@ export default function Contact() {
           </p>
         </div>
         <div className="form-container">
+          <div>Or fill out the form below...</div>
           <div className="float-label-1">
             <label className={isActive ? "Active" : ""} htmlFor="name">
               Name:
