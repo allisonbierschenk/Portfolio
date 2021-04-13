@@ -50,18 +50,13 @@ h1 {
   font-size: 24px;
   border-radius: 5px;
 }
+
 @media only screen and (max-width: 1300px) {
   .image-logo {
     margin-top: 5vh;
   }
-}
-
-@media only screen and (max-width: 1150px) {
-  .right-nav {
-    justify-content: space-around;
-  }
   h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
   .resume {
     padding: 5px 10px 5px 10px;
@@ -70,7 +65,24 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 1250px) {
+  .right-nav {
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .resume {
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
+  .nav {
+    height: 7vh;
+  }
   .right-nav {
     display: flex;
     justify-content: space-between;
@@ -78,11 +90,11 @@ h1 {
     padding-right: 40px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .resume {
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 5px;
   }
   .image-logo {
