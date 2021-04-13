@@ -67,7 +67,8 @@
 .float-label-2 .Active,
 .float-label-3 .Active {
   transform: translate(10%, -2.1vh);
-  color: white;
+  color: #d93ba293;
+  font-size: 12px;
 }
 
 .submit-button {
