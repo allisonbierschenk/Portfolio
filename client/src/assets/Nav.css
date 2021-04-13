@@ -12,6 +12,7 @@
   top: 0;
   background: #212d40;
   font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
   z-index: 3;
 }
 .left-nav {
