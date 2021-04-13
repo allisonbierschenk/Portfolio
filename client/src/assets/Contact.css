@@ -67,7 +67,7 @@
 .float-label-2 .Active,
 .float-label-3 .Active {
   transform: translate(10%, -2.1vh);
-  color: #d93ba293;
+  color: rgba(255, 255, 255, 0.61);
   font-size: 12px;
 }
 
