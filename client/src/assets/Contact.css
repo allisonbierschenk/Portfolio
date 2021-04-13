@@ -99,24 +99,11 @@
   .float-label-3 input,
   .float-label-1 input,
   .float-label-2 input,
-  .submit-button {
+  .submit-button,
+  .float-label-1 label,
+  .float-label-2 label,
+  .float-label-3 label {
     width: 75vw;
-  }
-  .form-container {
-    height: 60vh;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .float-label-3 input,
-  .float-label-1 input,
-  .float-label-2 input,
-  .submit-button {
-    width: 75vw;
-    margin: none;
-  }
-  .form-container {
-    height: 50vh;
   }
   .email-info {
     font-size: 20px;
