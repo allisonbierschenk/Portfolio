@@ -124,3 +124,12 @@
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .form-container {
+    height: 55vh;
+  }
+  .email-info {
+    font-size: 18px;
+  }
+}
