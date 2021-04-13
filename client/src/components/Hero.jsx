@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-//https://www.sliderrevolution.com/resources/css-animated-background/
+import ParticlesBg from "particles-bg";
+
 import "../assets/Hero.css";
 
 export default function Hero() {
@@ -11,6 +12,7 @@ export default function Hero() {
         <div className="clouds"></div>
       </div>
 
+      {/* <ParticlesBg color="#f72585" type="cobweb" bg={true} /> */}
       {/* <div className="socia-media">
         {/* <img className="icon" src="https://i.imgur.com/OUTCgGe.png" />
         <img className="icon" src="https://i.imgur.com/MiKSPkq.png" /> */}
