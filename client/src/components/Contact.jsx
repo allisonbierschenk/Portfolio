@@ -5,6 +5,9 @@ import "../assets/Contact.css";
 
 export default function Contact() {
   const [isActive, setIsActive] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
+
   const [formData, setFormData] = useState({
     Name: "",
     Email: "",
@@ -14,7 +17,7 @@ export default function Contact() {
   const history = useHistory();
   const { name, email, message } = formData;
 
-  const handleChange = (e) => {
+  const handleChange1 = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -27,6 +30,32 @@ export default function Contact() {
     }
   };
 
+  const handleChange2 = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+    if (value !== "") {
+      setIsActive2(true);
+    } else {
+      setIsActive2(false);
+    }
+  };
+
+  const handleChange3 = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+    if (value !== "") {
+      setIsActive3(true);
+    } else {
+      setIsActive3(false);
+    }
+  };
+
   // const submit = () => {
   //   history.goBack();
   // };
@@ -34,15 +63,18 @@ export default function Contact() {
   return (
     <div id="contact" className="contact">
       <form
+        action="https://getform.io/f/3f64d56f-15f0-4642-8a98-1b36b4e2b663"
+        method="POST"
         className="form-container"
-        onSubmit={(e) => {
-          e.preventDefault();
-          // submit();
-        }}
       >
         <div className="direct">
-          <p className="email-info"> Email me | allisonreynoldsc@gmail.com</p>
-          <div>FORM IS UNDER CONSTRUCTION</div>
+          <p>
+            {" "}
+            Email me |{" "}
+            <a className="email-info" href="mailto:allisonreynoldsc@gmail.com">
+              allisonreynoldsc@gmail.com
+            </a>
+          </p>
         </div>
         <div className="float-label-1">
           <label className={isActive ? "Active" : ""} htmlFor="name">
@@ -53,11 +85,11 @@ export default function Contact() {
             type="text"
             name="name"
             value={name}
-            onChange={handleChange}
+            onChange={handleChange1}
           />
         </div>
         <div className="float-label-2">
-          <label className={isActive ? "Active" : ""} htmlFor="email">
+          <label className={isActive2 ? "Active" : ""} htmlFor="email">
             Email:
           </label>
           <input
@@ -65,11 +97,11 @@ export default function Contact() {
             type="text"
             name="email"
             value={email}
-            onChange={handleChange}
+            onChange={handleChange2}
           />
         </div>
         <div className="float-label-3">
-          <label className={isActive ? "Active" : ""} htmlFor="message">
+          <label className={isActive3 ? "Active" : ""} htmlFor="message">
             Leave a message...
           </label>
           <textarea
@@ -77,10 +109,12 @@ export default function Contact() {
             type="text"
             name="message"
             value={message}
-            onChange={handleChange}
+            onChange={handleChange3}
           />
         </div>
-        <button className="submit-button">CURRENTLY NOT WORKING</button>
+        <button type="submit" className="submit-button">
+          SUBMIT
+        </button>
       </form>
     </div>
   );

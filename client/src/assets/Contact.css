@@ -24,6 +24,10 @@
   color: white;
 }
 
+.email-info:hover {
+  color: #f72585;
+}
+
 .float-label-1 label,
 .float-label-2 label,
 .float-label-3 label {
@@ -64,7 +68,7 @@
 .float-label-2 .Active,
 .float-label-3 .Active {
   transform: translate(10%, -2.1vh);
-  color: #7d4e57;
+  color: white;
 }
 
 .submit-button {
