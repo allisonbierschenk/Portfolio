@@ -14,7 +14,6 @@ export default function Contact() {
     Message: "",
   });
 
-  const history = useHistory();
   const { name, email, message } = formData;
 
   const handleChange1 = (e) => {
@@ -104,7 +103,7 @@ export default function Contact() {
           <label className={isActive3 ? "Active" : ""} htmlFor="message">
             Leave a message...
           </label>
-          <textarea
+          <input
             className="message"
             type="text"
             name="message"
