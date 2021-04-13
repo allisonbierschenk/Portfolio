@@ -67,7 +67,7 @@ export default function Contact() {
         className="form-container"
       >
         <div className="direct">
-          <p>
+          <p className="email">
             {" "}
             Email me |{" "}
             <a className="email-info" href="mailto:allisonreynoldsc@gmail.com">

@@ -117,4 +117,7 @@
   .email-info {
     font-size: 18px;
   }
+  .email {
+    overflow: hidden;
+  }
 }
