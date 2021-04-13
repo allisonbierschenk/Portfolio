@@ -64,7 +64,7 @@ export default function Contact() {
       <form
         action="https://getform.io/f/3f64d56f-15f0-4642-8a98-1b36b4e2b663"
         method="POST"
-        className="form-container"
+        className="full-container"
       >
         <div className="direct">
           <p className="email">
@@ -75,45 +75,47 @@ export default function Contact() {
             </a>
           </p>
         </div>
-        <div className="float-label-1">
-          <label className={isActive ? "Active" : ""} htmlFor="name">
-            Name:
-          </label>
-          <input
-            className="name"
-            type="text"
-            name="name"
-            value={name}
-            onChange={handleChange1}
-          />
+        <div className="form-container">
+          <div className="float-label-1">
+            <label className={isActive ? "Active" : ""} htmlFor="name">
+              Name:
+            </label>
+            <input
+              className="name"
+              type="text"
+              name="name"
+              value={name}
+              onChange={handleChange1}
+            />
+          </div>
+          <div className="float-label-2">
+            <label className={isActive2 ? "Active" : ""} htmlFor="email">
+              Email:
+            </label>
+            <input
+              className="email"
+              type="text"
+              name="email"
+              value={email}
+              onChange={handleChange2}
+            />
+          </div>
+          <div className="float-label-3">
+            <label className={isActive3 ? "Active" : ""} htmlFor="message">
+              Leave a message...
+            </label>
+            <textarea
+              className="message"
+              type="text"
+              name="message"
+              value={message}
+              onChange={handleChange3}
+            />
+          </div>
+          <button type="submit" className="submit-button">
+            SUBMIT
+          </button>
         </div>
-        <div className="float-label-2">
-          <label className={isActive2 ? "Active" : ""} htmlFor="email">
-            Email:
-          </label>
-          <input
-            className="email"
-            type="text"
-            name="email"
-            value={email}
-            onChange={handleChange2}
-          />
-        </div>
-        <div className="float-label-3">
-          <label className={isActive3 ? "Active" : ""} htmlFor="message">
-            Leave a message...
-          </label>
-          <input
-            className="message"
-            type="text"
-            name="message"
-            value={message}
-            onChange={handleChange3}
-          />
-        </div>
-        <button type="submit" className="submit-button">
-          SUBMIT
-        </button>
       </form>
     </div>
   );
