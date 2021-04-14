@@ -113,7 +113,7 @@ h1 {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 40vw;
+    width: 30vw;
     padding: 40px;
     transition: transform 0.3s ease-in-out;
     z-index: 10;
@@ -137,9 +137,32 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .image-logo {
+    margin-top: 5vh;
+  }
+  .right-nav {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .right-nav {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .right-nav {
+    width: 40vw;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .image-logo {
     margin-top: 5vh;
     margin-left: 1.5vw;
+  }
+  .right-nav {
+    width: 50vw;
   }
 }
