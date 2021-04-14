@@ -112,7 +112,7 @@
 
 @media only screen and (max-width: 555px) {
   .full-container {
-    height: 55vh;
+    height: 65vh;
   }
   .form-container {
     height: 80vh;
@@ -120,6 +120,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .full-container {
+    height: 70vh;
+  }
   .form-container {
     height: 80vh;
   }
