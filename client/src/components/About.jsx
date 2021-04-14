@@ -6,7 +6,7 @@ export default function About() {
     <div id="about" className="about-container">
       <h2 className="question-1">Who am I?</h2>
       <div className="answer">
-        I am a software engineer converted from a project manager
+        I am a software engineer converted from a project manager.
       </div>
       <h2 className="question-2">Where did I come from?</h2>
       <div className="answer">
@@ -23,10 +23,10 @@ export default function About() {
       <div className="answer">
         I am passionate about coming up with innovative, fast, concise, user
         friendly solutions to problems. I am geared towards problem solving and
-        collaborating in order to improve. I work well under pressure, even as a
-        server in the food industry, I was motivated by the fast moving culture
-        and providing the best customer service possible. I look forward to
-        combining these skills as a software engineer.
+        collaborating in order to improve. I also work well under pressure; even
+        as a server in the food industry, I was motivated by the fast moving
+        culture and providing the best customer service possible. I look forward
+        to combining these skills as a software engineer.
       </div>
     </div>
   );

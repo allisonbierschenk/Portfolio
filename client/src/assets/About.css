@@ -106,7 +106,7 @@
     opacity: 1;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .about-container {
     padding-top: 15%;
     padding-bottom: 15%;

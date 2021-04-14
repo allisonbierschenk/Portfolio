@@ -7,7 +7,7 @@ import "../assets/Nav.css";
 function Nav(props) {
   const [burgerOpen, setBurgerOpen] = useState(false);
   const burgerClose = () => {
-    setBurgerOpen(!burgerOpen);
+    setBurgerOpen((curr) => !curr);
   };
 
   return (
@@ -18,7 +18,7 @@ function Nav(props) {
         </Link>
         <HamburgerMenu setBurger={setBurgerOpen} />
       </div>
-      <div className="right-nav" id={burgerOpen ? "notopen" : "open"}>
+      <div className="right-nav" id={burgerOpen ? null : "open"}>
         <Link to="/#about" onClick={burgerClose}>
           <h1>About Me</h1>
         </Link>
