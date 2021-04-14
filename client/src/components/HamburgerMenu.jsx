@@ -44,8 +44,7 @@ const HamburgerMenu = (props) => {
     setOpen(!open);
     props.setBurger((curr) => !curr);
   };
-
-  <Nav />;
+  <Nav setOpen={setOpen} />;
   return (
     <>
       <StyledBurger open={open} onClick={burgerClick}>
