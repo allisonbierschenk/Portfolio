@@ -28,11 +28,11 @@
 
 .email-info {
   font-size: 26px;
-  color: white;
+  color: #1a936f;
 }
 
 .email-info:hover {
-  color: #f72585;
+  color: #88d498;
 }
 
 .float-label-1 label,
@@ -93,7 +93,8 @@
   font-size: 18px;
 }
 .submit-button:hover {
-  background-color: #364156;
+  background-color: #88d498;
+  color: #212d40;
 }
 
 @media only screen and (max-width: 800px) {
