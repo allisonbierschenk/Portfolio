@@ -6,6 +6,8 @@ export default function PortfolioPiecesContainer() {
     <div id="projects-dev" className="intro">
       <div className="projects-intro">Coding projects as the Developer...</div>
       <div className="projects-container">
+      <div className="each-project-container">
+
           <img className="image" src="https://i.imgur.com/PMJR5xR.png?1" />
           <div className="details">
             <div>
@@ -25,6 +27,7 @@ export default function PortfolioPiecesContainer() {
             >
               <button className="button">See My Contributions</button>
             </a>
+          </div>
           </div>
         <div className="each-project-container">
           <img className="image" src="https://i.imgur.com/oBIeaCe.jpg?1" />
