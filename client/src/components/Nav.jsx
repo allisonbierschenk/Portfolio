@@ -32,7 +32,7 @@ function Nav(props) {
           <h1>Get In Touch</h1>
         </Link>
         <a
-          href="https://docs.google.com/document/d/1Kwas794zloTfEraSfYf2AdVTFvr41221hmfVjmKeRN8/edit?usp=sharing"
+          href="https://drive.google.com/file/d/1IHj0csx4PW22ulIK9bIC6F18PA9pCapW/view?usp=sharing"
           target="_blank"
         >
           <h1 className="resume">resume</h1>
