@@ -6,7 +6,6 @@ export default function PortfolioPiecesContainer() {
     <div id="projects-dev" className="intro">
       <div className="projects-intro">Coding projects as the Developer...</div>
       <div className="projects-container">
-        <div className="each-project-container">
           <img className="image" src="https://www.screencast.com/t/dgEx0dfweDI7" />
           <div className="details">
             <div>
@@ -27,6 +26,7 @@ export default function PortfolioPiecesContainer() {
               <button className="button">See my Commits</button>
             </a>
           </div>
+        <div className="each-project-container">
           <img className="image" src="https://i.imgur.com/oBIeaCe.jpg?1" />
           <div className="details">
             <div>
