@@ -6,7 +6,7 @@ export default function PortfolioPiecesContainer() {
     <div id="projects-dev" className="intro">
       <div className="projects-intro">Coding projects as the Developer...</div>
       <div className="projects-container">
-          <img className="image" src="https://i.imgur.com/PMJR5xR.png" />
+          <img className="image" src="https://i.imgur.com/PMJR5xR.png?1" />
           <div className="details">
             <div>
               <div className="title">DemandJump</div>
