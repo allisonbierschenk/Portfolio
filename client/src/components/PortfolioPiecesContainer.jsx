@@ -7,6 +7,26 @@ export default function PortfolioPiecesContainer() {
       <div className="projects-intro">Coding projects as the Developer...</div>
       <div className="projects-container">
         <div className="each-project-container">
+          <img className="image" src="https://www.screencast.com/t/dgEx0dfweDI7" />
+          <div className="details">
+            <div>
+              <div className="title">DemandJump</div>
+              <div className="description">
+                Full stack website built with React, Typescript, Express, Node.js, and RESTful API built by a team of 4.
+              </div>
+            </div>
+          </div>
+          <div className="buttons">
+            <a href="https://travel-like-a-local.netlify.app" target="_blank">
+              <button className="button">See my Site</button>
+            </a>
+            <a
+              href="https://beta.app.demandjump.com/home?pid=51"
+              target="_blank"
+            >
+              <button className="button">See my Commits</button>
+            </a>
+          </div>
           <img className="image" src="https://i.imgur.com/oBIeaCe.jpg?1" />
           <div className="details">
             <div>
