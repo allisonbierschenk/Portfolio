@@ -20,7 +20,7 @@ export default function PortfolioPiecesContainer() {
               <button className="button">See My Site</button>
             </a>
             <a
-              href="https://github.com/allisonbierschenk?tab=overview&from=2023-06-01&to=2023-06-20"
+              href="https://github.com/allisonbierschenk?tab=overview "
               target="_blank"
             >
               <button className="button">See My Contributions</button>
