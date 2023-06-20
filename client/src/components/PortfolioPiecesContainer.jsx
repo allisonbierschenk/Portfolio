@@ -6,7 +6,7 @@ export default function PortfolioPiecesContainer() {
     <div id="projects-dev" className="intro">
       <div className="projects-intro">Coding projects as the Developer...</div>
       <div className="projects-container">
-          <img className="image" src="https://www.screencast.com/t/dgEx0dfweDI7" />
+          <img className="image" src="https://i.imgur.com/PMJR5xR.png" />
           <div className="details">
             <div>
               <div className="title">DemandJump</div>
@@ -16,14 +16,14 @@ export default function PortfolioPiecesContainer() {
             </div>
           </div>
           <div className="buttons">
-            <a href="https://travel-like-a-local.netlify.app" target="_blank">
-              <button className="button">See my Site</button>
+            <a href="https://beta.app.demandjump.com/home?pid=51" target="_blank">
+              <button className="button">See My Site</button>
             </a>
             <a
-              href="https://beta.app.demandjump.com/home?pid=51"
+              href="https://github.com/allisonbierschenk?tab=overview&from=2023-06-01&to=2023-06-20"
               target="_blank"
             >
-              <button className="button">See my Commits</button>
+              <button className="button">See My Contributions</button>
             </a>
           </div>
         <div className="each-project-container">
@@ -40,13 +40,13 @@ export default function PortfolioPiecesContainer() {
           </div>
           <div className="buttons">
             <a href="https://travel-like-a-local.netlify.app" target="_blank">
-              <button className="button">See my Site</button>
+              <button className="button">See My Site</button>
             </a>
             <a
               href="https://github.com/allisonbierschenk/Travel-Like-A-Local"
               target="_blank"
             >
-              <button className="button">See my Code</button>
+              <button className="button">See My Code</button>
             </a>
           </div>
         </div>
@@ -63,13 +63,13 @@ export default function PortfolioPiecesContainer() {
           </div>
           <div className="buttons">
             <a href="https://sundaydriver.netlify.app/" target="_blank">
-              <button className="button">See my Site</button>
+              <button className="button">See My Site</button>
             </a>
             <a
               href="https://github.com/allisonbierschenk/car-app"
               target="_blank"
             >
-              <button className="button">See my Code</button>
+              <button className="button">See My Code</button>
             </a>
           </div>
         </div>
@@ -87,13 +87,13 @@ export default function PortfolioPiecesContainer() {
           </div>
           <div className="buttons">
             <a href="https://whiteboard-workout.netlify.app/" target="_blank">
-              <button className="button">See my Site</button>
+              <button className="button">See My Site</button>
             </a>
             <a
               href="https://github.com/allisonbierschenk/Work_it_out"
               target="_blank"
             >
-              <button className="button">See my Code</button>
+              <button className="button">See My Code</button>
             </a>
           </div>
         </div>
@@ -112,13 +112,13 @@ export default function PortfolioPiecesContainer() {
               href="https://allisonbierschenk.github.io/good-news/"
               target="_blank"
             >
-              <button className="button">See my Site</button>
+              <button className="button">See My Site</button>
             </a>
             <a
               href="https://github.com/allisonbierschenk/good-news"
               target="_blank"
             >
-              <button className="button">See my Code</button>
+              <button className="button">See My Code</button>
             </a>
           </div>
         </div>
