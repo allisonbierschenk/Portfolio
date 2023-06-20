@@ -3,5 +3,6 @@
     "bootstrap": "^5.0.0-beta3",
     "particles-bg": "^2.5.5",
     "styled-components": "^5.2.3"
-  }
+  },
+  "exec": "npm start"
 }
