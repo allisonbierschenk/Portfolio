@@ -13,20 +13,17 @@ export default function About() {
         I have had a career in tech for 6 years starting in sales and most
         recently in project management.
       </div>
-      <h2 className="question-3">More about project management...</h2>
+      <h2 className="question-4">Me as an engineer</h2>
+      <div className="answer">
+        I am motivated by building innovative, fast, effective, user-friendly solutions to problems. I see the minutiae in everything. Typos stick out like a sore thumb. It would take more energy for me to ignore these things than to fix them. I am driven by delivering perfection and strive to achieve the highest of expectations in every setting I am in.
+        <br></br>
+        I have spent the last year with a small team of engineers at DemandJump, converting legacy code into a fast single-page app using React, Node, Express, and Typescript. We increased the speed and useability of the website.
+      </div>
+      <h2 className="question-3">If you are interested in my project management career</h2>
       <div className="answer">
         I spent 4 years as lead project-manager at a Forbes-recognized digital
         marketing agency. I managed the build, launch, and post-launch monthly
         maintenance of 15+ websites.
-      </div>
-      <h2 className="question-4">And a little bit more about me...</h2>
-      <div className="answer">
-        I am passionate about coming up with innovative, fast, concise, user
-        friendly solutions to problems. I am geared towards problem solving and
-        collaborating in order to improve. I also work well under pressure; even
-        as a server in the food industry, I was motivated by the fast moving
-        culture and providing the best customer service possible. I look forward
-        to combining these skills as a software engineer.
       </div>
     </div>
   );
