@@ -12,7 +12,9 @@ export default function About() {
       <div className="answer">
         Over the course of my 6-year journey in the tech industry, I have had the opportunity to explore diverse roles and expand my skill set. It all began in sales, where I discovered the exciting potential of technology. This experience ignited a deep passion within me and led me to transition into project management, where I honed my abilities in orchestrating successful tech initiatives.
         <br></br>
+        <br></br>
         Driven by a genuine love for problem-solving and a desire to explore the technical side of things, I embarked on a new path as a full stack software engineer. This transition has allowed me to combine my creativity with technical expertise, enabling me to craft innovative solutions that seamlessly blend form and function.
+        <br></br>
         <br></br>
         Throughout my career, I have embraced continuous learning and development, constantly refining my skills to adapt to the ever-evolving tech landscape. From sales strategies to project management and software engineering, each experience has contributed to my holistic understanding of the industry and enriched my problem-solving capabilities.
       </div>
@@ -20,11 +22,15 @@ export default function About() {
       <div className="answer">
         I am fueled by my passion for crafting revolutionary, high-performing, and user-centric solutions to complex challenges. With an acute attention to detail, I possess an innate ability to detect even the slightest imperfections, as typos stand out to me like beacons in the night. My commitment to excellence compels me to rectify these issues with precision, as it requires more effort for me to disregard them than to address them head-on.
         <br></br>
+        <br></br>
         Endowed with an unyielding pursuit of perfection, I consistently strive to surpass the loftiest of expectations in every environment I inhabit. My unwavering drive has been demonstrated during my impactful tenure at DemandJump, where I collaborated closely with a select group of talented engineers. Together, we embarked on a transformative journey to modernize legacy code into a lightning-fast, cutting-edge single-page application. Leveraging the power of React, Node, Express, and Typescript, we meticulously optimized the website's performance, resulting in an astounding 94% increase in speed.
+        <br></br>
         <br></br>
         Not only did we achieve unprecedented speed enhancements, but we also revolutionized the user experience, infusing it with a newfound sense of intuitiveness and ease. By employing innovative technologies and leveraging our collective expertise, we propelled the website into a league of its own, captivating users and surpassing industry standards.
         <br></br>
+        <br></br>
         I am motivated by building innovative, fast, effective, user-friendly solutions to problems. I see the minutiae in everything. Typos stick out like a sore thumb. It would take more energy for me to ignore these things than to fix them. I am driven by delivering perfection and strive to achieve the highest of expectations in every setting I am in.
+        <br></br>
         <br></br>
         I have spent the last year with a small team of engineers at DemandJump, converting legacy code into a fast single-page app using React, Node, Express, and Typescript. We increased the speed of the website by 94% as well as delivered far more intuitive useabilit
       </div>
