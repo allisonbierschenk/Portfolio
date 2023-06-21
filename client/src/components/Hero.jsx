@@ -17,7 +17,7 @@ export default function Hero() {
         {/* <img className="icon" src="https://i.imgur.com/OUTCgGe.png" />
         <img className="icon" src="https://i.imgur.com/MiKSPkq.png" /> */}
       {/* </div> */}
-      <div className="hello">Welcome! I'm Allison Bierschenk</div>
+      <div className="hello">Discover the Engineering Journey of Allison Bierschenk</div>
       <div className="image-hero">
         <img
           src="https://i.imgur.com/3UEODg1.jpg?1"
