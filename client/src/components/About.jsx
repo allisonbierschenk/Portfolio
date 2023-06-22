@@ -20,7 +20,7 @@ export default function About() {
       </div>
       <h2 className="question-4">Me as an engineer</h2>
       <div className="answer">
-        I am fueled by my passion for crafting revolutionary, high-performing, and user-centric solutions to complex challenges. With an acute attention to detail, I possess an innate ability to detect even the slightest imperfections, as typos stand out to me like beacons in the night. My commitment to excellence compels me to rectify these issues with precision, as it requires more effort for me to disregard them than to address them head-on.
+        I am hi by my passion for crafting revolutionary, high-performing, and user-centric solutions to complex challenges. With an acute attention to detail, I possess an innate ability to detect even the slightest imperfections, as typos stand out to me like beacons in the night. My commitment to excellence compels me to rectify these issues with precision, as it requires more effort for me to disregard them than to address them head-on.
         <br></br>
         <br></br>
         Endowed with an unyielding pursuit of perfection, I consistently strive to surpass the loftiest of expectations in every environment I inhabit. My unwavering drive has been demonstrated during my impactful tenure at DemandJump, where I collaborated closely with a select group of talented engineers. Together, we embarked on a transformative journey to modernize legacy code into a lightning-fast, cutting-edge single-page application. Leveraging the power of React, Node, Express, and Typescript, we meticulously optimized the website's performance, resulting in an astounding 94% increase in speed.
