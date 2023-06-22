@@ -10,7 +10,7 @@ export default function About() {
       </div>
       <h2 className="question-2">Where did I come from?</h2>
       <div className="answer">
-        Over the course of my 6-year journey in the tech industry, I have had the opportunity to explore diverse roles and expand my skill set. It all began in sales, where I discovered the exciting potential of technology. This experience ignited a deep passion within me and led me to transition into project management, where I honed my abilities in orchestrating successful tech initiatives.
+        Over the course of my 8-year journey in the tech industry, I have had the opportunity to explore diverse roles and expand my skill set. It all began in sales, where I discovered the exciting potential of technology. This experience ignited a deep passion within me and led me to transition into project management, where I honed my abilities in orchestrating successful tech initiatives.
         <br></br>
         <br></br>
         Driven by a genuine love for problem-solving and a desire to explore the technical side of things, I embarked on a new path as a full stack software engineer. This transition has allowed me to combine my creativity with technical expertise, enabling me to craft innovative solutions that seamlessly blend form and function.
