@@ -35,7 +35,7 @@ export default function About() {
         During my tenure as the lead project manager at a prestigious digital marketing agency acknowledged by Forbes, I skillfully orchestrated the end-to-end development, seamless launch, and continuous monthly upkeep of a staggering portfolio encompassing more than 15 cutting-edge websites.
         <br></br>
         <br></br>
-        With meticulous attention to detail and an steadfast commitment to excellence, I ensured that each project surpassed expectations, setting new benchmarks for digital innovation. My strategic oversight and adept management skills were instrumental in driving unparalleled success for our clients, solidifying our agency's reputation as a leader in the field.
+        With meticulous attention to detail and a steadfast commitment to excellence, I ensured that each project surpassed expectations, setting new benchmarks for digital innovation. My strategic oversight and adept management skills were instrumental in driving unparalleled success for our clients, solidifying our agency's reputation as a leader in the field.
         <br></br>
         <br></br>
         Throughout this transformative journey, I navigated complex challenges, collaborated with multidisciplinary teams, and consistently delivered exceptional results. My persistent dedication to the art of project management and my ability to harmonize creativity, technology, and business objectives propelled our agency to new heights, earning accolades from both clients and industry peers.
