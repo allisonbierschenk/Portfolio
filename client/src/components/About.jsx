@@ -1,8 +1,11 @@
 import React from "react";
 import "../assets/About.css";
+import Nav from "./Nav";
 
 export default function About() {
   return (
+    <>
+      <Nav/>
     <div id="about" className="about-container">
       <h2 className="question-1">Who am I?</h2>
       <div className="answer">
@@ -18,7 +21,7 @@ export default function About() {
         <br></br>
         Throughout my career, I have embraced continuous learning and development, constantly refining my skills to adapt to the ever-evolving tech landscape. From sales strategies to project management and software engineering, each experience has contributed to my holistic understanding of the industry and enriched my problem-solving capabilities.
       </div>
-      <h2 className="question-4">Me as an engineer</h2>
+      <h2 className="question-3">Me as an engineer</h2>
       <div className="answer">
         I am fueled by my passion for crafting revolutionary, high-performing, and user-centric solutions to complex challenges. With an acute attention to detail, I possess an innate ability to detect even the slightest imperfections, as typos stand out to me like beacons in the night. My commitment to excellence compels me to rectify these issues with precision, as it requires more effort for me to disregard them than to address them head-on.
         <br></br>
@@ -30,7 +33,7 @@ export default function About() {
         <br></br>
         Not only did we achieve unprecedented speed enhancements, but we also revolutionized the user experience, infusing it with a newfound sense of intuitiveness and ease. By employing innovative technologies and leveraging our collective expertise, we propelled the website into a league of its own, captivating users and surpassing industry standards.
       </div>
-      <h2 className="question-3">If you are interested in my project management career</h2>
+      <h2 className="question-4">If you are interested in my project management career</h2>
       <div className="answer">
         During my tenure as the lead project manager at a prestigious digital marketing agency acknowledged by Forbes, I skillfully orchestrated the end-to-end development, seamless launch, and continuous monthly upkeep of a staggering portfolio encompassing more than 15 cutting-edge websites.
         <br></br>
@@ -40,6 +43,7 @@ export default function About() {
         <br></br>
         Throughout this transformative journey, I navigated complex challenges, collaborated with multidisciplinary teams, and consistently delivered exceptional results. My persistent dedication to the art of project management and my ability to harmonize creativity, technology, and business objectives propelled our agency to new heights, earning accolades from both clients and industry peers.
       </div>
-    </div>
+      </div>
+      </>
   );
 }

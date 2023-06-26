@@ -1,5 +1,5 @@
 .about-container {
-  padding-top: 10%;
+  padding-top: 2%;
   padding-bottom: 10%;
   background-color: white;
   padding-left: 20vw;
@@ -14,10 +14,7 @@
 }
 
 .question-1 {
-  transform: translateY(-600px);
-  animation: 1.2s slideIn ease-in-out forwards 1s;
-  opacity: 0;
-  position: relative;
+  animation: 1.2s slideIn ease-in-out forwards .00001s;
   color: #11151c;
   font-size: 26px;
   font-weight: bolder;
@@ -30,7 +27,7 @@
   background-color: var(--secondary-color);
   position: absolute;
   bottom: -10px;
-  animation: 1s underline ease-in-out both 3s;
+  animation: 1s underline ease-in-out both 1s;
   mix-blend-mode: screen;
 }
 .question-2 {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 
 import "../assets/Contact.css";
+import Nav from "./Nav";
 
 export default function Contact() {
   const [isActive, setIsActive] = useState(false);
@@ -55,11 +55,10 @@ export default function Contact() {
     }
   };
 
-  // const submit = () => {
-  //   history.goBack();
-  // };
 
   return (
+    <>
+      <Nav/>
     <div id="contact" className="contact">
       <form
         action="https://getform.io/f/3f64d56f-15f0-4642-8a98-1b36b4e2b663"
@@ -119,5 +118,6 @@ export default function Contact() {
         </div>
       </form>
     </div>
+    </>
   );
 }

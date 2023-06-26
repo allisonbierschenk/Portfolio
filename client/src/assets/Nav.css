@@ -109,7 +109,7 @@ h1 {
     flex-flow: column nowrap;
     background-color: #212d40;
     position: fixed;
-    justify-content: start;
+    justify-content: flex-start;
     top: 0;
     right: 0;
     height: 100vh;

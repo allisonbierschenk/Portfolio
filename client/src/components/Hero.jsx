@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
+import React from "react";
 
 import "../assets/Hero.css";
 
@@ -11,12 +10,6 @@ export default function Hero() {
         <div className="twinkling"></div>
         <div className="clouds"></div>
       </div>
-
-      {/* <ParticlesBg color="#f72585" type="cobweb" bg={true} /> */}
-      {/* <div className="socia-media">
-        {/* <img className="icon" src="https://i.imgur.com/OUTCgGe.png" />
-        <img className="icon" src="https://i.imgur.com/MiKSPkq.png" /> */}
-      {/* </div> */}
       <div className="hello">Discover the Engineering Journey of Allison Bierschenk</div>
       <div className="image-hero">
         <img
