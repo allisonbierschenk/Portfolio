@@ -3,7 +3,6 @@ import "../assets/DeveloperProjects.css";
 import Nav from "./Nav";
 
 export default function DeveloperProjects() {
-  console.log("hello")
   return (
     <>
       <Nav/>
