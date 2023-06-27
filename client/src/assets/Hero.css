@@ -14,6 +14,77 @@
   z-index: 3;
 }
 
+.fancy-button {
+  position: relative;
+  display: inline-block;
+  padding: 14px 20px;
+  font-weight: bold;
+  background-color: #c6dabf;
+  border: 2px dashed #6333ff;
+  border-radius: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1;
+  animation: border-animation 3s infinite;
+
+}
+
+.fancy-button:before {
+  content: '';
+  height: 100%;
+  z-index: -1;
+}
+
+@keyframes border-animation {
+  0% {
+    width: 0%;
+    border-color: #f1537a;
+  }
+  50% {
+    width: 2%;
+    border-color: #11151c;
+  }
+  100% {
+    width: 0%;
+    border-color: #5f33ff;
+  }
+}
+
+@keyframes arrow-animation {
+  0% {
+    border-color: #f1537a;
+  }
+  50% {
+    border-color: #11151c;
+  }
+  100% {
+    border-color: #5f33ff;
+  }
+}
+.fancy-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.fancy-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #f1537a;
+  border-right: 2px solid #f1537a;
+  transition: transform 0.3s ease;
+}
+
+.fancy-button:hover:after {
+  transform: translateX(50%) translateY(-50%) rotate(45deg);
+  animation: arrow-animation 3s infinite;
+}
+
+
 .social-media {
   display: flex;
 }
@@ -29,13 +100,6 @@
   height: 30vh;
   z-index: 3;
 }
-
-/* .icon > img {
-  background-size: cover;
-  vertical-align: middle;
-  object-fit: fill;
-  width: 100%;
-} */
 
 @keyframes move-background {
   from {

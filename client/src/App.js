@@ -8,7 +8,6 @@ import ProjectManagerProjects from "./components/ProjectManagerProjects";
 
 function App() {
   return (
-    <div className="App">
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
@@ -28,7 +27,6 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-    </div>
   );
 }
 
