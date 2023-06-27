@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   background-color: white;
 }
 .full-container {
@@ -11,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20vh;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 2% 8%;
   height: 70vh;
   width: auto;

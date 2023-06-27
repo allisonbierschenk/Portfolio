@@ -8,7 +8,7 @@ export default function ProjectManagerProjects() {
       <Nav/>
     <div id="projects-pm" className="intro-pm">
       <div className="projects-intro">
-        Web dev projects as the Lead Project Manager...
+        Projects as the Lead Project Manager...
       </div>
       <div className="projects-container">
         <div className="each-project-container">
