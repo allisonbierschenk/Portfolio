@@ -1,6 +1,7 @@
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -8,4 +9,15 @@
   font-size: 12px;
   color: white;
   padding-left: 40px;
+}
+
+.linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: white;
+  width: 100%;
+  padding-left: 99%; 
+  font-size: 40px;
 }
