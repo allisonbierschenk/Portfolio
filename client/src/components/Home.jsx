@@ -192,7 +192,7 @@ export default function Hero() {
           <>
         {!showWinScreen && 
           <div className="game-container">  
-          <div className='center-div'>First one to 6 wins!</div>
+          <div className='center-div'>First one to 6, WINS!</div>
           <canvas
           style={{ zIndex: 6 }}
           ref={canvasRef}
