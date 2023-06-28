@@ -7,7 +7,7 @@ import Nav from './Nav';
 import Footer from "./Footer"
 
 export default function Hero() {
-  const isDesktop = useMediaQuery('(min-width: 768px)'); // Adjust the breakpoint as needed
+  const isDesktop = useMediaQuery('(min-width: 768px)');
   const [showWinScreen, setShowWinScreen] = useState(false)
   const [player1, setplayer1] = useState(0)
   const [player2, setplayer2] = useState(0)
