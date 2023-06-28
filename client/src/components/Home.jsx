@@ -145,8 +145,8 @@ export default function Hero() {
   // makes the ball
     colorCircle(ballX, ballY, 10, "white")
   //score keeper
-    canvasContext.fillText(`Your score: ${player1}`, 100, 100)
-    canvasContext.fillText(`Computer score: ${player2}`, canvas.width-100, 100)
+    canvasContext.fillText(`Your score: ${player1}`, 20, 30)
+    canvasContext.fillText(`Computer score: ${player2}`, canvas.width-100, 30)
 
   };
 
