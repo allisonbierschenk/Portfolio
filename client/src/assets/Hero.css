@@ -16,7 +16,7 @@
 .fancy-button {
   position: relative;
   display: inline-block;
-  padding: 14px 20px;
+  padding: 24px 75px;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.3);
   border: 2px dashed #6333ff;
@@ -69,13 +69,13 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 25px;
   transform: translateY(-50%) rotate(45deg);
-  width: 10px;
-  height: 10px;
+  width: 25px;
+  height: 25px;
   border-top: 2px solid #f1537a;
   border-right: 2px solid #f1537a;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .fancy-button:hover:after {
@@ -97,7 +97,11 @@
 .my-pic,
 .image-hero {
   height: 30vh;
-  z-index: 3;
+  z-index: 10;
+}
+.my-pic {
+  display: none; /* Initially hide the image */
+
 }
 
 @keyframes move-background {
@@ -218,7 +222,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 800px;
+  width: 700px;
   height: 400px;
   background-size: 3000% 3000%;
   animation: rainbow 15s linear infinite;
@@ -229,6 +233,14 @@
   text-transform: uppercase;
 }
 
+.game-container{
+  z-index: 6;
+}
+@media only screen and (max-width: 768px) {
+  .game-container {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 890px) {
   .construction {
@@ -237,6 +249,15 @@
   }
   .hello {
     font-size: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .my-pic {
+    display: block;
+  }
+
+  .image-hero {
+    display: none;
   }
 }
 

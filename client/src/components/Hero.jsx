@@ -16,6 +16,7 @@ export default function Hero() {
   let paddleY = 250
   let paddleX = 250
   let thickness = 10
+  let mouseInGameBox = false;
   const winningScore = 1
   const paddleHeight = 100
 
@@ -34,7 +35,11 @@ export default function Hero() {
     setplayer1(0)
     setplayer2(0)
     setShowWinScreen(false)
-}
+  }
+  const handleMouseEnter = () => {
+    mouseInGameBox = true;
+  };
+
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -55,11 +60,13 @@ export default function Hero() {
         }
         
         drawEverything();
-        moveEverything();
-      }, 1000 / framesPerSecond);
-  
-      return () => clearInterval(interval);
-    }
+        if (mouseInGameBox) {
+          moveEverything();
+        }
+        }, 1000 / framesPerSecond);
+    
+        return () => clearInterval(interval);
+      }
   }, [player1, player2, showWinScreen]);
 
   const ballReset = () => {
@@ -173,15 +180,22 @@ export default function Hero() {
       <div className="hero">
       <div className="hello">Discover the Engineering Journey of Allison Bierschenk</div>
       <Link className="fancy-button " to="/about"></Link>
-        <div>
-        {/* <img
+        <div className="my-pic">
+        <img
           src="https://i.imgur.com/3UEODg1.jpg?1"
-          className="my-pic"
-            alt="allison-bierschenk"
-        /> */}
+          alt="allison-bierschenk"
+        />
         </div >
         {!showWinScreen && 
-        <canvas style={{zIndex: 6}} ref={canvasRef} id="gameCanvas" width={800} height={400}/>
+          <div className="game-container">  
+            <canvas
+            style={{ zIndex: 6 }}
+            ref={canvasRef}
+            id="gameCanvas"
+            width={800} height={400}
+            onMouseEnter={handleMouseEnter}
+          />
+          </div>
         }
         {showWinScreen && (
           <div className="won-screen moving-border">
