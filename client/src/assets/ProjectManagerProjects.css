@@ -25,9 +25,10 @@
   font-size: 28px;
 }
 
-@media only screen and (max-width: 7390px) {
+
+@media only screen and (max-width: 750px) {
   .intro-pm {
-    padding: 9%;
+    padding: 8%;
   }
 }
 
