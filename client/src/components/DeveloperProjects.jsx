@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/DeveloperProjects.css";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 export default function DeveloperProjects() {
   return (
@@ -134,7 +135,8 @@ export default function DeveloperProjects() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <Footer/>
     </>
   );
 }

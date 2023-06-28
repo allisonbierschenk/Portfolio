@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/ProjectManagerProjects.css";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 export default function ProjectManagerProjects() {
   return (
@@ -104,7 +105,8 @@ export default function ProjectManagerProjects() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <Footer/>
     </>
   );
 }

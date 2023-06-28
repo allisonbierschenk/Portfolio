@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/About.css";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 export default function About() {
   return (
@@ -44,6 +45,7 @@ export default function About() {
         Throughout this transformative journey, I navigated complex challenges, collaborated with multidisciplinary teams, and consistently delivered exceptional results. My persistent dedication to the art of project management and my ability to harmonize creativity, technology, and business objectives propelled our agency to new heights, earning accolades from both clients and industry peers.
       </div>
       </div>
+      <Footer/>
       </>
   );
 }

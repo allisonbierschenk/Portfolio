@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "../assets/Contact.css";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 export default function Contact() {
   const [isActive, setIsActive] = useState(false);
@@ -117,7 +118,8 @@ export default function Contact() {
           </button>
         </div>
       </form>
-    </div>
+      </div>
+      <Footer/>
     </>
   );
 }
