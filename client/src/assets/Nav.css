@@ -70,8 +70,7 @@ h1 {
 @media only screen and (max-width: 1250px) {
   .right-nav {
     justify-content: space-around;
-    z-index: 11;
-
+    z-index: 3;
   }
   h1 {
     font-size: 22px;
@@ -92,7 +91,7 @@ h1 {
     justify-content: space-between;
     width: 73vw;
     padding-right: 40px;
-    z-index: 11;
+    z-index: 3;
 
   }
   h1 {
@@ -121,7 +120,7 @@ h1 {
     width: 30vw;
     padding: 40px;
     transition: transform 0.3s ease-in-out;
-    z-index: 10;
+    z-index: 3;
   }
 
   #open {
@@ -153,14 +152,14 @@ h1 {
 @media only screen and (max-width: 600px) {
   .right-nav {
     width: 45vw;
-    z-index: 11;
+    z-index: 3;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .right-nav {
     width: 40vw;
-    z-index: 11;
+    z-index: 3;
 
   }
 }
@@ -172,7 +171,7 @@ h1 {
   }
   .right-nav {
     width: 50vw;
-    z-index: 11;
+    z-index: 3;
 
   }
 }
