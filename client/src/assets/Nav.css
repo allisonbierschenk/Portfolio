@@ -13,14 +13,14 @@
   background: #212d40;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 1px;
-  z-index: 3;
+  z-index: 11;
 }
 .left-nav {
   padding-left: 3%;
 }
 a {
   text-decoration: none;
-  color: #c6dabf;
+  color: white;
 }
 a:hover {
   color: white;
@@ -34,6 +34,7 @@ h1 {
   justify-content: space-between;
   width: 73vw;
   padding-right: 40px;
+  z-index: 11;
 }
 
 .image-logo {
@@ -69,6 +70,8 @@ h1 {
 @media only screen and (max-width: 1250px) {
   .right-nav {
     justify-content: space-around;
+    z-index: 11;
+
   }
   h1 {
     font-size: 22px;
@@ -89,6 +92,8 @@ h1 {
     justify-content: space-between;
     width: 73vw;
     padding-right: 40px;
+    z-index: 11;
+
   }
   h1 {
     font-size: 22px;
@@ -148,12 +153,15 @@ h1 {
 @media only screen and (max-width: 600px) {
   .right-nav {
     width: 45vw;
+    z-index: 11;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .right-nav {
     width: 40vw;
+    z-index: 11;
+
   }
 }
 
@@ -164,5 +172,7 @@ h1 {
   }
   .right-nav {
     width: 50vw;
+    z-index: 11;
+
   }
 }

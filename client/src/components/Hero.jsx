@@ -1,10 +1,13 @@
-import { Link, useHistory } from 'react-router-dom';
-import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
 
 import "../assets/Hero.css";
 import Nav from './Nav';
 
 export default function Hero() {
+  const [showWinScreen, setShowWinScreen] = useState(false)
+  const [player1, setplayer1] = useState(0)
+  const [player2, setplayer2] = useState(0)
   const canvasRef = useRef(null);
   let ballX = 50;
   let ballY = 50;
@@ -13,10 +16,7 @@ export default function Hero() {
   let paddleY = 250
   let paddleX = 250
   let thickness = 10
-  let player1 = 0
-  let player2 = 0
-  let showWinScreen = false;
-  const winningScore = 3
+  const winningScore = 1
   const paddleHeight = 100
 
   const calculateMousePosition = (evt) => {
@@ -30,40 +30,48 @@ export default function Hero() {
       Y: mouseY
     }
   }
-  const handleMouseClick = (evt) => {
-    if (showWinScreen) {
-      player1 = 0
-      player2 = 0
-      showWinScreen = false
-  }
+  const handleMouseClick = () => {
+    setplayer1(0)
+    setplayer2(0)
+    setShowWinScreen(false)
 }
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const framesPerSecond = 30
-    
-    setInterval(function () {
-      drawEverything();
-      moveEverything();
-    }, 1000 / framesPerSecond);
-    
-    canvas.addEventListener("mousedown", handleMouseClick)
-    canvas.addEventListener("mousemove", function (evt) {
-      let mousePos = calculateMousePosition(evt)
-      paddleY = mousePos.Y - (paddleHeight/2)
-    })
-  }, []);
+    if (player1 >= winningScore || player2 >= winningScore) {
+      setShowWinScreen(true)
+      setplayer1(0)
+      setplayer2(0)
+    }
+    if (!showWinScreen) {
+      canvas.addEventListener("mousemove", function (evt) {
+        let mousePos = calculateMousePosition(evt)
+        paddleY = mousePos.Y - (paddleHeight/2)
+      })
+      const interval = setInterval(() => {
+        if (!canvas) {
+          return;
+        }
+        
+        drawEverything();
+        moveEverything();
+      }, 1000 / framesPerSecond);
+  
+      return () => clearInterval(interval);
+    }
+  }, [player1, player2, showWinScreen]);
 
   const ballReset = () => {
-    if (player1 >= winningScore || player2 >= winningScore) {
-      showWinScreen = true;
+    if (!showWinScreen) {
+      const canvas = canvasRef.current;
+      if (!canvas) {
+        return;
+      }
+      ballSpeedX = -ballSpeedX
+      ballX = canvas.width / 2
+      ballY = canvas.height / 2
     }
-    const canvas = canvasRef.current;
-    ballSpeedX = -ballSpeedX
-    ballX = canvas.width / 2
-    ballY = canvas.height / 2
-    
-
   }
   const computerMovement = () => {
     const paddleXCenter = paddleX + (paddleHeight/2)
@@ -74,43 +82,41 @@ export default function Hero() {
     }
   }
   const moveEverything = () => {
-    const canvas = canvasRef.current;
-    if (!canvas) {
-      return;
-    }
-    if (showWinScreen) {
-      return;
-    }
-    computerMovement()
-
-    ballX += ballSpeedX;
-    ballY += ballSpeedY;
-
-    if (ballX < 0) {
-      if (ballY > paddleY && ballY < paddleY + paddleHeight) {
-        ballSpeedX = -ballSpeedX
-        let deltaY = ballY - (paddleY + paddleHeight / 2)
-        ballSpeedY = deltaY*0.35
-      } else {
-        player2 += 1
-        ballReset()
+    if (!showWinScreen) {
+      const canvas = canvasRef.current;
+      if (!canvas) {
+        return;
       }
-    }
-    if (ballX > canvas.width) {
-      if (ballY > paddleX && ballY < paddleX + paddleHeight) {
-        ballSpeedX = -ballSpeedX
-        let deltaY = ballY - (paddleX + paddleHeight / 2)
-        ballSpeedY = deltaY*.35
-      } else {
-        player1 += 1
-        ballReset()
+      computerMovement()  
+      ballX += ballSpeedX;
+      ballY += ballSpeedY;
+  
+      if (ballX < 0) {
+        if (ballY > paddleY && ballY < paddleY + paddleHeight) {
+          ballSpeedX = -ballSpeedX
+          let deltaY = ballY - (paddleY + paddleHeight / 2)
+          ballSpeedY = deltaY*0.35
+        } else {
+          setplayer2((prevPlayer2) => prevPlayer2 + 1);
+          ballReset()
+        }
       }
-    }
-    if (ballY < 0) {
-      ballSpeedY = -ballSpeedY
-    }
-    if (ballY > canvas.height) {
-      ballSpeedY = -ballSpeedY
+      if (ballX > canvas.width) {
+        if (ballY > paddleX && ballY < paddleX + paddleHeight) {
+          ballSpeedX = -ballSpeedX
+          let deltaY = ballY - (paddleX + paddleHeight / 2)
+          ballSpeedY = deltaY*.35
+        } else {
+          setplayer1((prevPlayer1) => prevPlayer1 + 1);
+          ballReset()
+        }
+      }
+      if (ballY < 0) {
+        ballSpeedY = -ballSpeedY
+      }
+      if (ballY > canvas.height) {
+        ballSpeedY = -ballSpeedY
+      }
     }
   }
   const drawNet = () => {
@@ -126,26 +132,8 @@ export default function Hero() {
       return;
     }
     const canvasContext = canvas.getContext('2d');
-    if (showWinScreen) {
-      // Clear the canvas
-      canvasContext.clearRect(0, 0, canvas.width, canvas.height);
-      // Draw the black rectangle
-      canvasContext.fillStyle = "black";
-      canvasContext.fillRect(0, 0, canvas.width, canvas.height);
-      canvasContext.fillStyle = "white"
-      if (player1 >= winningScore) {
-        canvasContext.fillText("You Win!", 150,200)
-      }
-      if (player2 >= winningScore) {
-        canvasContext.fillText("Computer Wins!", 150,200)
-      }
-      canvasContext.fillText("Click to play again", 145,300)
-
-    
-    return;
-    }
   // makes a black square
-    colorRect(0, 0, canvas.width, canvas.height, "black")
+    colorRect(0, 0, canvas.width, canvas.height, "green")
     drawNet()
   // makes the left paddle
     colorRect(0, paddleY, thickness, paddleHeight, "white")
@@ -174,9 +162,6 @@ export default function Hero() {
     
   }
 
-
-  const history = useHistory();
-
   return (
     <div>
       <Nav/>
@@ -188,14 +173,24 @@ export default function Hero() {
       <div className="hero">
       <div className="hello">Discover the Engineering Journey of Allison Bierschenk</div>
       <Link className="fancy-button " to="/about"></Link>
-        <div style={{zIndex: 6}}>
+        <div>
         {/* <img
           src="https://i.imgur.com/3UEODg1.jpg?1"
           className="my-pic"
             alt="allison-bierschenk"
         /> */}
-        </div>
+        </div >
+        {!showWinScreen && 
         <canvas style={{zIndex: 6}} ref={canvasRef} id="gameCanvas" width={800} height={400}/>
+        }
+        {showWinScreen && (
+          <div className="won-screen moving-border">
+          <div>
+            {player1 ? 'You won!' : 'Computer won!'}
+          </div>
+          <div onClick={handleMouseClick}>Click to play again</div>
+          </div>
+)}
       </div>
     </div>
   );

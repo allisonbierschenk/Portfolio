@@ -9,11 +9,14 @@ const StyledBurger = styled.div`
   right: 20px;
   z-index: 11;
   display: none;
+  
 
   @media (max-width: 950px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    z-index: 11;
+
   }
 
   #burger-lines {
@@ -23,16 +26,24 @@ const StyledBurger = styled.div`
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+    z-index: 11;
+
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0deg)")};
+      z-index: 11;
+
     }
     &:nth-child(2) {
       transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
       opacity: ${({ open }) => (open ? 0 : 1)};
+      z-index: 11;
+
     }
     &:nth-child(3) {
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0deg)")};
+      z-index: 11;
+
     }
   }
 `;

@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  color: #c6dabf;
+  color: white;
   font-family: "Arima Madurai", cursive;
   font-size: 20px;
   scroll-behavior: smooth;

@@ -5,7 +5,6 @@
   height: 80vh;
   align-items: center;
   width: 100vw;
-  z-index: -3;
 }
 
 .hello {
@@ -19,7 +18,7 @@
   display: inline-block;
   padding: 14px 20px;
   font-weight: bold;
-  background-color: #c6dabf;
+  background-color: rgba(0, 0, 0, 0.3);
   border: 2px dashed #6333ff;
   border-radius: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -42,7 +41,7 @@
   }
   50% {
     width: 2%;
-    border-color: #11151c;
+    border-color: #f6f8fb;
   }
   100% {
     width: 0%;
@@ -175,6 +174,61 @@
   -webkit-animation: move-background 70s linear infinite;
   animation: move-background 70s linear infinite;
 }
+
+.moving-border {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: moving-border-animation 4s linear infinite;
+}
+.moving-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px dotted #f1537a;
+  animation: moving-border-animation 4s linear infinite;
+}
+
+@keyframes moving-border-animation {
+  0% {
+    transform: translate(0, 0); /* Use transform instead of top/left */
+  }
+  25% {
+    transform: translate(100%, 0);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  75% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.won-screen {
+  z-index: 6;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 400px;
+  background-size: 3000% 3000%;
+  animation: rainbow 15s linear infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 
 @media only screen and (max-width: 890px) {
   .construction {
