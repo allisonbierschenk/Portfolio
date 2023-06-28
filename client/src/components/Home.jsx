@@ -167,7 +167,7 @@ export default function Hero() {
   }
 
   const getWindowSize = () => {
-    if (window.innerWidth > 768)
+    if (window.innerWidth > 785)
       {setShowGame(true)}
   };
 
