@@ -63,7 +63,7 @@ export default function Hero() {
     
         return () => clearInterval(interval);
       }
-  }, [player1, player2, showGame]);
+  }, [player1, player2, showGame, showWinScreen]);
 
   const ballReset = () => {
     if (!showWinScreen) {
