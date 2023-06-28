@@ -83,12 +83,12 @@
 
 @media only screen and (max-width: 1200px) {
   .intro {
-    padding: 15%;
+    padding: 8%;
   }
 }
 @media only screen and (max-width: 900px) {
   .intro {
-    padding: 20%;
+    padding: 8%;
   }
   .projects-container {
     width: 100%;
@@ -104,7 +104,7 @@
 }
 @media only screen and (max-width: 700px) {
   .intro {
-    padding: 30% 20%;
+    padding: 8%;
   }
   .button {
     height: 3vh;
@@ -113,7 +113,7 @@
 }
 @media only screen and (max-width: 550px) {
   .intro {
-    padding: 40% 20%;
+    padding: 8%;
   }
   .each-project-container {
     width: 100%;
@@ -124,6 +124,6 @@
 }
 @media only screen and (max-width: 350px) {
   .intro {
-    padding: 45% 20%;
+    padding: 8%;
   }
 }
