@@ -101,7 +101,11 @@
 }
 .my-pic {
   display: none; /* Initially hide the image */
-
+}
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes move-background {

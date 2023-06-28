@@ -16,8 +16,7 @@ export default function Hero() {
   let paddleY = 250
   let paddleX = 250
   let thickness = 10
-  let mouseInGameBox = false;
-  const winningScore = 1
+  const winningScore = 6
   const paddleHeight = 100
 
   const calculateMousePosition = (evt) => {
@@ -36,10 +35,6 @@ export default function Hero() {
     setplayer2(0)
     setShowWinScreen(false)
   }
-  const handleMouseEnter = () => {
-    mouseInGameBox = true;
-  };
-
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -58,16 +53,14 @@ export default function Hero() {
         if (!canvas) {
           return;
         }
-        
         drawEverything();
-        if (mouseInGameBox) {
-          moveEverything();
-        }
+        moveEverything();
+        
         }, 1000 / framesPerSecond);
     
         return () => clearInterval(interval);
       }
-  }, [player1, player2, showWinScreen]);
+  }, [player1, player2]);
 
   const ballReset = () => {
     if (!showWinScreen) {
@@ -168,7 +161,6 @@ export default function Hero() {
     canvasContext.fillRect(leftX, topY, width, height)
     
   }
-
   return (
     <div>
       <Nav/>
@@ -188,12 +180,12 @@ export default function Hero() {
         </div >
         {!showWinScreen && 
           <div className="game-container">  
+            <div className='center-div'>First one to 6 wins!</div>
             <canvas
             style={{ zIndex: 6 }}
             ref={canvasRef}
             id="gameCanvas"
             width={800} height={400}
-            onMouseEnter={handleMouseEnter}
           />
           </div>
         }
