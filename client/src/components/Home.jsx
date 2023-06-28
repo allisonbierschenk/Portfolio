@@ -23,15 +23,14 @@ export default function Hero() {
 
   const calculateMousePosition = (evt) => {
     const canvas = canvasRef.current;
-    let rect = canvas.getBoundingClientRect()
-    let root = document.documentElement
-    let mouseX = evt.clientX - rect.left - root.scrollLeft
-    let mouseY = evt.clientY - rect.top - root.scrollTop
+    let rect = canvas.getBoundingClientRect();
+    let mouseX = evt.clientX - rect.left;
+    let mouseY = evt.clientY - rect.top;
     return {
       X: mouseX,
       Y: mouseY
-    }
-  }
+    };
+  };
   const handleMouseClick = () => {
     setplayer1(0)
     setplayer2(0)
