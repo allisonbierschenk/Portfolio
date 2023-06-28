@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom';
 import React, { useEffect, useRef, useState } from 'react';
-import { useMediaQuery } from '@material-ui/core';
 
 import "../assets/Home.css";
 import Nav from './Nav';
 import Footer from "./Footer"
 
 export default function Hero() {
-  const isDesktop = useMediaQuery('(min-width: 768px)');
   const [showWinScreen, setShowWinScreen] = useState(false)
+  const [showGame, setShowGame] = useState(false)
   const [player1, setplayer1] = useState(0)
   const [player2, setplayer2] = useState(0)
   const canvasRef = useRef(null);
@@ -42,12 +41,13 @@ export default function Hero() {
   useEffect(() => {
     const canvas = canvasRef.current;
     const framesPerSecond = 30
+    getWindowSize();
     if (player1 >= winningScore || player2 >= winningScore) {
       setShowWinScreen(true)
       setplayer1(0)
       setplayer2(0)
     }
-    if (!showWinScreen && isDesktop) {
+    if (!showWinScreen && showGame) {
       canvas.addEventListener("mousemove", function (evt) {
         let mousePos = calculateMousePosition(evt)
         paddleY = mousePos.Y - (paddleHeight/2)
@@ -63,7 +63,7 @@ export default function Hero() {
     
         return () => clearInterval(interval);
       }
-  }, [player1, player2, isDesktop]);
+  }, [player1, player2, showGame]);
 
   const ballReset = () => {
     if (!showWinScreen) {
@@ -149,6 +149,7 @@ export default function Hero() {
     canvasContext.fillText(`Computer score: ${player2}`, canvas.width-100, 100)
 
   };
+
   const colorCircle = (centerX, centerY, radius, drawColor) => {
     const canvas = canvasRef.current;
     const canvasContext = canvas.getContext('2d');
@@ -157,14 +158,19 @@ export default function Hero() {
     canvasContext.arc(centerX, centerY, radius, 0, Math.PI * 2, true)
     canvasContext.fill()
   }
+
   const colorRect = (leftX, topY, width, height, drawColor) => {
     const canvas = canvasRef.current;
     const canvasContext = canvas.getContext('2d');
     canvasContext.fillStyle = drawColor
     canvasContext.fillRect(leftX, topY, width, height)
-    
   }
-  console.log("isdesktop", isDesktop)
+
+  const getWindowSize = () => {
+    if (window.innerWidth > 768)
+      {setShowGame(true)}
+  };
+
   return (
     <div>
       <Nav/>
@@ -182,7 +188,7 @@ export default function Hero() {
           alt="allison-bierschenk"
         />
         </div>
-        {isDesktop && 
+        {showGame && 
           <>
         {!showWinScreen && 
           <div className="game-container">  
