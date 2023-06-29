@@ -186,42 +186,6 @@
   animation: move-background 70s linear infinite;
 }
 
-.moving-border {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  animation: moving-border-animation 4s linear infinite;
-}
-.moving-border::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px dotted #f1537a;
-  animation: moving-border-animation 4s linear infinite;
-}
-
-@keyframes moving-border-animation {
-  0% {
-    transform: translate(0, 0); /* Use transform instead of top/left */
-  }
-  25% {
-    transform: translate(100%, 0);
-  }
-  50% {
-    transform: translate(100%, 100%);
-  }
-  75% {
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
 .won-screen {
   z-index: 6;
   color: white;
@@ -251,11 +215,9 @@
 }
 
 @media only screen and (max-width: 890px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 65px;
-  }
+
   .hello {
+    padding-top: 5%;
     font-size: 60px;
   }
 }
@@ -269,72 +231,31 @@
   }
 }
 
-@media only screen and (max-width: 775px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 60px;
-  }
-}
-
-@media only screen and (max-width: 725px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 55px;
-  }
-}
-
-@media only screen and (max-width: 655px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 50px;
-  }
-}
-
 @media only screen and (max-width: 595px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 45px;
-  }
   .hello {
     font-size: 55px;
   }
 }
 
 @media only screen and (max-width: 535px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 40px;
-  }
   .hello {
     font-size: 50px;
   }
 }
 
 @media only screen and (max-width: 475px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 35px;
-  }
   .hello {
     font-size: 45px;
   }
 }
 
 @media only screen and (max-width: 440px) {
-  .construction {
-    padding-top: 30px;
-    font-size: 30px;
-  }
   .hello {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  .construction {
-    padding-top: 25px;
-    font-size: 30px;
-  }
   .hello {
     font-size: 35px;
   }

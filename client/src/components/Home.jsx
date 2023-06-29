@@ -18,7 +18,7 @@ export default function Hero() {
   let paddleY = 250
   let paddleX = 250
   let thickness = 10
-  const winningScore = 6
+  const winningScore = 1
   const paddleHeight = 100
 
   const calculateMousePosition = (evt) => {
@@ -43,8 +43,6 @@ export default function Hero() {
     getWindowSize();
     if (player1 >= winningScore || player2 >= winningScore) {
       setShowWinScreen(true)
-      setplayer1(0)
-      setplayer2(0)
     }
     if (!showWinScreen && showGame) {
       canvas.addEventListener("mousemove", function (evt) {
@@ -169,7 +167,7 @@ export default function Hero() {
     if (window.innerWidth > 785)
       {setShowGame(true)}
   };
-
+console.log("player1", player1)
   return (
     <div>
       <Nav/>
@@ -201,9 +199,9 @@ export default function Hero() {
           </div>
         }
         {showWinScreen && (
-          <div className="won-screen moving-border">
+          <div className="won-screen">
           <div>
-          {player1 ? 'You won!' : 'Computer won!'}
+          {player1 === winningScore ? 'You won!' : 'Computer won!'}
           </div>
           <div onClick={handleMouseClick}>Click to play again</div>
           </div>
