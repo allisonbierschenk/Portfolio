@@ -92,6 +92,9 @@ h1 {
     font-size: 16px;
     border-radius: 5px;
   }
+  .image-logo{
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -113,9 +116,6 @@ h1 {
     padding: 5px 10px 5px 10px;
     font-size: 16px;
     border-radius: 5px;
-  }
-  .image-logo {
-    margin-top: 5vh;
   }
 }
 
@@ -143,19 +143,21 @@ h1 {
     transform: translateX(0);
   }
   .image-logo {
-    margin-top: 5vh;
+    height: 80px
   }
 }
 
 @media only screen and (max-width: 800px) {
   .image-logo {
-    margin-top: 5vh;
+    padding-top: 20%;
+    height: 70px;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .image-logo {
-    margin-top: 5vh;
+    height: 60px;
+    padding-top: 20%
   }
   .right-nav {
     width: 40vw;
@@ -165,6 +167,10 @@ h1 {
   .right-nav {
     width: 45vw;
     z-index: 3;
+  }
+  .image-logo {
+    height: 40px;
+    padding-bottom: 60px
   }
 }
 
