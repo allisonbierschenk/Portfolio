@@ -32,6 +32,7 @@ h1 {
 .right-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 73vw;
   padding-right: 40px;
   z-index: 11;
@@ -53,6 +54,17 @@ h1 {
   width: fit-content;
 }
 
+.linkedin-icon-nav{
+  color: #f1537a;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .linkedin {
+    font-size: 20px;
+    padding: 2% 0% 1% 90%; 
+  }
+}
 @media only screen and (max-width: 1300px) {
   .image-logo {
     margin-top: 5vh;

@@ -3,6 +3,8 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
 import "../assets/Nav.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Nav(props) {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -37,6 +39,13 @@ function Nav(props) {
           rel="noreferrer"
         >
           <h1 className="resume">resume</h1>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/allison-bierschenk/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon-nav" />
         </a>
       </div>
     </div>
