@@ -18,7 +18,7 @@ export default function Hero() {
   let paddleY = 250
   let paddleX = 250
   let thickness = 10
-  const winningScore = 1
+  const winningScore = 6
   const paddleHeight = 100
 
   const calculateMousePosition = (evt) => {
