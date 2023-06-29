@@ -113,6 +113,10 @@
   .form-container {
     height: 55vh;
   }
+  .full-container{
+    margin-top: 10%;
+
+  }
 }
 
 @media only screen and (max-width: 555px) {
