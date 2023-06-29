@@ -190,6 +190,9 @@ h1 {
   .right-nav {
     width: 50vw;
     z-index: 3;
-
+  }
+  .image-logo {
+    height: 40px;
+    padding-bottom: 38px
   }
 }
